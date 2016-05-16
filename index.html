@@ -2,8 +2,74 @@
 <html>
 <head>
 	<title>Number Facts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="libs/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="scripts/engine.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
 </head>
-<body>
-Hello World
+<body class="noselect">
+<div id="introPage" style="display:block;">
+	<div style="height: 50px;"></div>
+	<div class="title">
+		<div>Number Facts</div>
+		<div style="color: yellow">Quiz</div>
+	</div>
+	<div style="height: 100px;"></div>
+	<div id="startButton" class="start">Let's Play!</div>
+</div>
+<div id="gamePage" style="display:none;">
+	<div class="timer">
+		<span>Time: </span>
+		<span class="time">2:00</span>
+	</div>
+	<div style="height: 90px;"></div>
+	<div id="question" class="question" style="display: none;">
+		<div id="p1">??</div>
+		<div id="op">+</div>
+		<div id="p2">??</div>
+		<div id="eq" style="width: 100px;">=</div>
+		<div id="ans">??</div>
+	</div>
+	<div style="height: 80px;"></div>
+	<div class="number-pad">
+		<table>
+			<tr>
+				<td class="numberKey" key="7">7</td>
+				<td class="numberKey" key="8">8</td>
+				<td class="numberKey" key="9">9</td>
+			</tr>
+			<tr>
+				<td class="numberKey" key="4">4</td>
+				<td class="numberKey" key="5">5</td>
+				<td class="numberKey" key="6">6</td>
+			</tr>
+			<tr>
+				<td class="numberKey" key="1">1</td>
+				<td class="numberKey" key="2">2</td>
+				<td class="numberKey" key="3">3</td>
+			</tr>
+			<tr>
+				<td class="numberKey" key="0">0</td>
+				<td class="numberKey" key="DEL">&lt;&lt;</td>
+				<td class="numberKey" key="OK">OK</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div id="resultPage" style="display:none;">
+	<div style="height: 80px;"></div>
+	<div class="title">Result</div>
+	<div style="height: 80px;"></div>
+	<div class="result">
+		Score:&nbsp;&nbsp;<span id="score" class="value">20 / 30</span>
+	</div>
+	<div class="result">
+		Time Left:&nbsp;&nbsp;<span id="timeLeft" class="value">0:12</span>
+	</div>
+	<div style="height: 80px;"></div>
+	<div id="reStartButton" class="restart text-shadow">Start Again</div>
+</div>
 </body>
 </html>

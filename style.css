@@ -1,0 +1,100 @@
+body {
+	background: url('images/background.png');
+	color: white;
+	font-family: 'Changa One', cursive;
+}
+
+.text-shadow {
+	text-shadow:
+	1px 1px 0 #CCC,
+	2px 2px 0 #CCC, /* end of 2 level deep grey shadow */
+	3px 3px 0 #444,
+	4px 4px 0 #444,
+	5px 5px 0 #111,
+	6px 6px 0 #000; /* end of 4 level deep dark shadow */
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+#introPage .title {
+	font-size: 90px;
+	text-align: center;
+}
+
+#introPage .start {
+	font-size: 100px;
+	text-align: center;
+	color: #FF1DAD;
+}
+
+#gamePage .question {
+	text-align: center;
+	font-size: 90px;
+}
+
+#gamePage .question div {
+	display: inline-block;
+}
+
+#gamePage .question #ans {
+	text-decoration: underline;
+	color: yellow;
+}
+
+#gamePage .timer {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	font-size: 40px;
+}
+
+#gamePage .timer .time {
+	color: #FF1DAD;
+}
+
+#gamePage .number-pad table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80px;    
+}
+
+#gamePage .number-pad table td {
+	width: 100px;
+	text-align: center;
+	border: 1px solid white;
+}
+
+#gamePage .number-pad .button-pressed {
+	background-color: red;
+}
+
+#resultPage .title {
+	font-size: 90px;
+	text-align: center;
+	color: #FF1DAD;
+}
+
+#resultPage .result {
+	font-size: 80px;	
+	text-align: center;
+	color: white;
+}
+
+#resultPage .value {
+	font-size: 80px;	
+	color: yellow;
+}
+
+#resultPage .restart {
+	font-size: 80px;	
+	text-align: center;
+	color: red;	
+}
