@@ -44,6 +44,10 @@ body {
 	display: inline-block;
 }
 
+#gamePage .questions .eq {
+	width: 100px;
+}
+
 #gamePage .question #ans {
 	text-decoration: underline;
 	color: yellow;
@@ -64,6 +68,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-size: 80px;    
+}
+
+#gamePage .number-pad-gap {
+	height: 80px;
 }
 
 #gamePage .number-pad table td {
@@ -97,4 +105,61 @@ body {
 	font-size: 80px;	
 	text-align: center;
 	color: red;	
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2)
+{ 
+	#introPage .title {
+		font-size: 70px;
+	}
+
+	#introPage .start {
+		font-size: 60px;
+	}
+
+	#gamePage .question {
+		font-size: 60px;
+	}
+
+	#gamePage .questions .eq {
+		width: 80px;
+	}
+
+	#gamePage .timer {
+		top: 10px;
+		left: 10px;
+		font-size: 40px;
+	}
+
+	#gamePage .number-pad-gap {
+		height: 60px;
+	}
+
+	#gamePage .number-pad table {
+	    font-size: 70px;    
+	}
+
+	#gamePage .number-pad table td {
+		width: 80px;
+	}
+
+	#resultPage .title {
+		font-size: 70px;
+	}
+
+	#resultPage .result {
+		font-size: 50px;	
+	}
+
+	#resultPage .value {
+		font-size: 50px;	
+	}
+
+	#resultPage .restart {
+		font-size: 50px;	
+	}
 }
