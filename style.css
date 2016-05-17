@@ -79,6 +79,7 @@ body {
 	width: 100px;
 	text-align: center;
 	border: 1px solid white;
+	cursor: pointer;
 }
 
 #gamePage .number-pad .button-pressed {
