@@ -1,7 +1,7 @@
 function GameEngine() {
 	
 	var TIME_LIMIT = 120;
-	var QUIZ_LIMIT = 3;
+	var QUIZ_LIMIT = 30;
 	var timer = 0;
 	var intervalId = null;
 
