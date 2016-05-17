@@ -33,6 +33,7 @@ body {
 	font-size: 100px;
 	text-align: center;
 	color: #FF1DAD;
+	cursor: pointer;
 }
 
 #gamePage .question {
@@ -105,6 +106,7 @@ body {
 	font-size: 80px;	
 	text-align: center;
 	color: red;	
+	cursor: pointer;
 }
 
 @media only screen 
