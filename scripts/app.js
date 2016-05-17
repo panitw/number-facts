@@ -30,14 +30,14 @@ $(function () {
 						$(this).removeClass("button-pressed");				   	
 				   });
 
-	$(".numberKey").on("mousedown", function () {
-						$(this).addClass("button-pressed");
-						var val = $(this).attr("key");
-						engine.inputEnter(val);
-					})
-				   .on("mouseup", function () {
-						$(this).removeClass("button-pressed");				   	
-				   });
+	// $(".numberKey").on("mousedown", function () {
+	// 					$(this).addClass("button-pressed");
+	// 					var val = $(this).attr("key");
+	// 					engine.inputEnter(val);
+	// 				})
+	// 			   .on("mouseup", function () {
+	// 					$(this).removeClass("button-pressed");				   	
+	// 			   });
 	
 	$(engine).on("ready", function (e) {
 		$("#introPage").fadeOut(500, function () {
